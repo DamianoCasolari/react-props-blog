@@ -1,0 +1,6 @@
+@import url('./partials/_utilities.css');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
