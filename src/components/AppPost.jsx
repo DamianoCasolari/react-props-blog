@@ -25,10 +25,13 @@ export function AppPost({ id, title, image, content, tags }) {
           <p>{content}</p>
         </div>
         <div className="mt-4 font-bold text-[20px] ">
-          {tags.map((tag) => {
+          {tags.map((tag, i) => {
             let color = MapColor[tag] ?? " bg-gray-500";
             return (
-              <span key={id} className={"me-2 rounded-full py-1 px-6" + color}>
+              <span
+                key={"tag" + id + i}
+                className={"me-2 rounded-full py-1 px-6" + color}
+              >
                 {tag}{" "}
               </span>
             );
