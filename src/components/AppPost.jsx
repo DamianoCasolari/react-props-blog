@@ -30,7 +30,9 @@ export function AppPost({ id, title, image, content, tags }) {
             return (
               <span
                 key={"tag" + id + i}
-                className={"me-2 rounded-full py-1 px-6" + color}
+                className={
+                  "me-2 mt-2 inline-block rounded-full py-1 px-6" + color
+                }
               >
                 {tag}{" "}
               </span>
